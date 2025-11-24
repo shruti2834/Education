@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Greenfield College — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Greenfield College</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to Greenfield College</h2>
+      <p>Excellence in education, research and community engagement.</p>
+      <a class="btn" href="about.html">Learn more →</a>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Programs</h3>
+        <p>Bachelor's and Master's programs in Science, Arts, Commerce and Engineering.</p>
+      </article>
+
+      <article class="card">
+        <h3>Admissions</h3>
+        <p>Apply online. Merit-based scholarships and student support available.</p>
+      </article>
+
+      <article class="card">
+        <h3>Campus Life</h3>
+        <p>Clubs, sports, labs and cultural events — a vibrant student experience.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Greenfield College — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

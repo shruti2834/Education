@@ -1,0 +1,107 @@
+/* styles.css - simple responsive two page layout */
+:root{
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #2a7ae2;
+  --text: #222;
+  --muted: #666;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+.container{
+  width:min(1100px, 92%);
+  margin:0 auto;
+  padding:1rem 0;
+}
+
+/* header */
+.site-header{
+  background:linear-gradient(90deg,#fff 0%, #f4f8ff 100%);
+  border-bottom:1px solid #e6eefc;
+}
+.site-header .container{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.8rem 0;
+}
+.brand{
+  margin:0;
+  font-size:1.1rem;
+  color:var(--accent);
+}
+nav a{
+  margin-left:1rem;
+  text-decoration:none;
+  color:var(--muted);
+  padding:0.3rem 0.5rem;
+  border-radius:6px;
+}
+nav a.active,
+nav a:hover{
+  color:var(--accent);
+  background:#eef6ff;
+}
+
+/* hero */
+.hero{
+  background:var(--card);
+  padding:2rem;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(20,30,60,0.04);
+  margin:1.2rem 0;
+  text-align:center;
+}
+.hero h2{margin:0 0 .25rem 0}
+.hero p{margin:.25rem 0 1rem;color:var(--muted)}
+.btn{
+  display:inline-block;
+  padding:.6rem 1rem;
+  text-decoration:none;
+  border-radius:8px;
+  background:var(--accent);
+  color:white;
+  font-weight:600;
+}
+
+/* cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+  margin-bottom:1.5rem;
+}
+.card{
+  background:var(--card);
+  padding:1rem;
+  border-radius:8px;
+  box-shadow:0 1px 4px rgba(10,20,40,0.04);
+}
+.card h3{margin-top:0}
+.content{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(10,20,40,0.04)}
+
+/* footer */
+.site-footer{
+  border-top:1px solid #e6eefc;
+  background:transparent;
+  padding:1rem 0;
+  margin-top:1rem;
+  color:var(--muted);
+  text-align:center;
+  font-size:0.9rem;
+}
+
+/* responsive tweaks */
+@media (max-width:640px){
+  .site-header .container{flex-direction:column;gap:.6rem;align-items:flex-start}
+  .hero{padding:1rem}
+}

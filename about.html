@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Greenfield College</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Greenfield College</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <h2>About Our College</h2>
+      <p>Greenfield College was established in 1990 with a mission to deliver quality education and foster innovation. We offer undergraduate and postgraduate courses across multiple disciplines.</p>
+
+      <h3>Vision</h3>
+      <p>To be a centre of excellence in education, research and community service.</p>
+
+      <h3>Contact</h3>
+      <ul>
+        <li>Address: 123 Campus Road, Greenfield</li>
+        <li>Email: info@greenfield.example</li>
+        <li>Phone: +1 (555) 123-4567</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Greenfield College — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
